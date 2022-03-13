@@ -3,7 +3,7 @@ package com.epam.training.Andrej_Paulau.fundamental.main_task;
 import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
+    // Приветствовать любого пользователя при вводе его имени через командную строку.
 public class HelloName {
     public static void main(String[] args) {
         String str = "Hello, " + Arrays.toString(args) + "!";
