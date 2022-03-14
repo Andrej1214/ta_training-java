@@ -4,18 +4,18 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class TaskOne {
-
+    //Найти самое короткое и самое длинное число. Вывести найденные числа и их длину.
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         ArrayList<String> list = new ArrayList<>();
         System.out.println("Введите целые числа через пробел: ");
-        String[] masString = null;
+        String[] masString;
         String input = "";
         input += scanner.nextLine();
         scanner.close();
         masString = input.split("\\s+");
         for (int i = 0; i < masString.length; i++) {
-            if(masString[i].matches("(\\d+.\\d+)")) {
+            if(masString[i].matches("(-?)(\\d*)\\.?(\\d+)")) {
                 list.add(masString[i]);
             }
         }
