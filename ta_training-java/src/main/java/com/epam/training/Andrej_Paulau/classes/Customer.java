@@ -94,22 +94,17 @@ public class Customer {
         }
 
     }
-
     public String getBankAccount() {
         return bankAccount;
     }
-
     public void setBankAccount(String bankAccount) {
         this.bankAccount = bankAccount;
     }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-
         Customer customer = (Customer) o;
-
         if (id != customer.id) return false;
         if (creditCardNumber != customer.creditCardNumber) return false;
         if (!name.equals(customer.name)) return false;
